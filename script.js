@@ -94,7 +94,7 @@ class User {
     }
 
     getAge() {
-        return this.UserAge;
+        return this.userAge;
     }
 
     setAge(age) {
@@ -107,11 +107,13 @@ class User {
 }
 
 const ivan = new User('Ivan', 27);
-// console.log(ivan.name);
-// console.log(ivan.getAge());
-// ivan.say();
+console.log(ivan.name);
+ivan.userAge = 777;
+console.log(ivan.userAge);
+console.log(ivan.getAge());
+ivan.say();
 
-// ivan.setAge(52);
-// ivan.setAge(300);
-// ivan.name = 'Nick';
+ivan.setAge(52);
+ivan.setAge(300);
+ivan.name = 'Nick';
 ivan.say();
