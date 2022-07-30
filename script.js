@@ -86,20 +86,20 @@ const ivan = new User('Ivan', 27);
 class User {
     constructor(name, age) {
         this.name = name;
-        this.userAge = age;
+        this._age = age;
     }
 
     say() {
-        console.log(`Имя пользователя: ${this.name}, возраст: ${this.userAge}`);
+        console.log(`Имя пользователя: ${this.name}, возраст: ${this._age}`);
     }
 
     getAge() {
-        return this.userAge;
+        return this._age;
     }
 
     setAge(age) {
         if (typeof age === 'number' && age > 0 && age < 110) {
-            this.userAge = age;
+            this._age = age;
         } else {
             console.log('Недопустимое значение!');
         }
