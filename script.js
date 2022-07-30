@@ -31,11 +31,11 @@ class User {
 
     say = () => {
         console.log(`Имя пользователя: ${this.name} ${this.#surname}, возраст ${this._age}`);
-    },
+    }
 
     get age() {
         return this._age;
-    },
+    }
 
     set age(age) {
         if (typeof age === 'number' && age > 0 && age < 110) {
@@ -43,11 +43,15 @@ class User {
         } else {
             console.log('Недопустимое значение!');
         }
-    },
+    }
 }
 
 const ivan = new User('Ivan', 27);
-
+console.log(ivan.age);
+ivan.age = 300;
+ivan.age = 52;
+console.log(ivan.age);
+ivan.say();
 
 
 // function User(name, age) {
@@ -83,31 +87,31 @@ const ivan = new User('Ivan', 27);
 // ivan.say();
 
 
-class User {
-    constructor(name, age) {
-        this.name = name;
-        this._age = age;
-    }
+// class User {
+//     constructor(name, age) {
+//         this.name = name;
+//         this._age = age;
+//     }
 
-    say() {
-        console.log(`Имя пользователя: ${this.name}, возраст: ${this._age}`);
-    }
+//     say() {
+//         console.log(`Имя пользователя: ${this.name}, возраст: ${this._age}`);
+//     }
 
-    get age() {
-        return this._age;
-    }
+//     get age() {
+//         return this._age;
+//     }
 
-    set age(age) {
-        if (typeof age === 'number' && age > 0 && age < 110) {
-            this._age = age;
-        } else {
-            console.log('Недопустимое значение!');
-        }
-    }
-}
+//     set age(age) {
+//         if (typeof age === 'number' && age > 0 && age < 110) {
+//             this._age = age;
+//         } else {
+//             console.log('Недопустимое значение!');
+//         }
+//     }
+// }
 
-const ivan = new User('Ivan', 27);
-console.log(ivan._age);
-ivan._age = 99;
-console.log(ivan._age);
-ivan.say();
+// const ivan = new User('Ivan', 27);
+// console.log(ivan._age);
+// ivan._age = 99;
+// console.log(ivan._age);
+// ivan.say();
