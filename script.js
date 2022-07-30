@@ -44,13 +44,21 @@ class User {
             console.log('Недопустимое значение!');
         }
     }
+
+    get surname() {
+        return this.#surname;
+    }
+
+    set surname(surname) {
+        this.#surname = surname;
+    }
+
 }
 
 const ivan = new User('Ivan', 27);
-console.log(ivan.age);
-ivan.age = 300;
-ivan.age = 52;
-console.log(ivan.age);
+ivan.say();
+console.log(ivan.surname);
+console.log(ivan.surname = 'Ivanovich');
 ivan.say();
 
 
