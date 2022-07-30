@@ -52,19 +52,19 @@ const ivan = new User('Ivan', 27);
 
 function User(name, age) {
     this.name = name;
-    this.age = age;
+    let userAge = age;
 
     this.say = function () {
-        console.log(`Имя пользователя: ${this.name}, возраст: ${this.age}`);
+        console.log(`Имя пользователя: ${this.name}, возраст: ${userAge}`);
     }
 
 }
 
 const ivan = new User('Ivan', 27);
 console.log(ivan.name);
-console.log(ivan.age);
+console.log(ivan.userAge);
 ivan.say();
 
-ivan.age = 52;
+ivan.userAge = 52;
 ivan.name = 'Nick';
 ivan.say();
