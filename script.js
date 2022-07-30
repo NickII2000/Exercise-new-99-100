@@ -55,7 +55,7 @@ function User(name, age) {
     this.age = age;
 
     this.say = function () {
-        console.log(`Имя пользователя: ${this.name}, возраст ${this.age}`);
+        console.log(`Имя пользователя: ${this.name}, возраст: ${this.age}`);
     }
 
 }
