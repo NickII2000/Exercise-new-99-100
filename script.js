@@ -107,7 +107,7 @@ class User {
 }
 
 const ivan = new User('Ivan', 27);
-console.log(ivan.age);
-ivan.age = 99;
-console.log(ivan.age);
+console.log(ivan._age);
+ivan._age = 99;
+console.log(ivan._age);
 ivan.say();
