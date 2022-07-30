@@ -94,12 +94,12 @@ class User {
     }
 
     getAge() {
-        return UserAge;
+        return this.UserAge;
     }
 
     setAge(age) {
         if (typeof age === 'number' && age > 0 && age < 110) {
-            this._age = age;
+            this.userAge = age;
         } else {
             console.log('Недопустимое значение!');
         }
