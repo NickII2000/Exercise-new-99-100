@@ -108,6 +108,6 @@ class User {
 
 const ivan = new User('Ivan', 27);
 console.log(ivan.age);
-ivan.age = 777;
-
+ivan.age = 99;
+console.log(ivan.age);
 ivan.say();
