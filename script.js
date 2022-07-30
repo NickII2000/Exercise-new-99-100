@@ -78,5 +78,6 @@ console.log(ivan.getAge());
 ivan.say();
 
 ivan.setAge(52);
+ivan.setAge(300);
 ivan.name = 'Nick';
 ivan.say();
