@@ -93,11 +93,11 @@ class User {
         console.log(`Имя пользователя: ${this.name}, возраст: ${this._age}`);
     }
 
-    getAge() {
+    get age() {
         return this._age;
     }
 
-    setAge(age) {
+    set age(age) {
         if (typeof age === 'number' && age > 0 && age < 110) {
             this._age = age;
         } else {
