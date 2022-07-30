@@ -74,9 +74,9 @@ function User(name, age) {
 
 const ivan = new User('Ivan', 27);
 console.log(ivan.name);
-console.log(ivan.userAge);
+console.log(ivan.getAge());
 ivan.say();
 
-ivan.userAge = 52;
+ivan.setAge(52);
 ivan.name = 'Nick';
 ivan.say();
