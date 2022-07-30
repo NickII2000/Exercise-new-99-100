@@ -86,12 +86,12 @@ const ivan = new User('Ivan', 27);
 class User {
     constructor(name, age) {
         this.name = name;
-        let userAge = age;
+        this.userAge = age;
     }
 
     say() {
-        console.log(`Имя пользователя: ${this.name}, возраст: ${this._age}`);
-    },
+        console.log(`Имя пользователя: ${this.name}, возраст: ${this.userAge}`);
+    }
 
     getAge() {
         return UserAge;
@@ -105,3 +105,13 @@ class User {
         }
     }
 }
+
+const ivan = new User('Ivan', 27);
+// console.log(ivan.name);
+// console.log(ivan.getAge());
+// ivan.say();
+
+// ivan.setAge(52);
+// ivan.setAge(300);
+// ivan.name = 'Nick';
+ivan.say();
