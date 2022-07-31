@@ -126,3 +126,6 @@ ivan.say();
 
 // Ex. 101
 
+const number = 1;
+
+(function () { })();
