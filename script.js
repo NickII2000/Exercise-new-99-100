@@ -143,7 +143,7 @@ const user = (function () {
 
     return {
         sayHello: privat
-    }
+    };
 })();
 
 user.sayHello();
