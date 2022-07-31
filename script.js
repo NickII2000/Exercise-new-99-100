@@ -123,3 +123,6 @@ ivan.say();
 // ivan._age = 99;
 // console.log(ivan._age);
 // ivan.say();
+
+// Ex. 101
+
