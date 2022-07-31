@@ -138,7 +138,7 @@ console.log(number);
 
 const user = (function () {
     const privat = function () {
-        console.log('I am privat');
+        console.log('I am privat!');
     };
 
     return {
