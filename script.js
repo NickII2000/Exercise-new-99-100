@@ -128,4 +128,10 @@ ivan.say();
 
 const number = 1;
 
-(function () { })();
+(function () {
+    const number = 2;
+    console.log(number);
+    console.log(number + 3);
+})();
+
+console.log(number);
